@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  margin: 0;
+}
+header {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .nav {
+  display: flex;
+  justify-content: space-around;
+}
+header .container .nav li {
+  padding-left: 20px;
+}
+footer {
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  padding-left: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.gravatar {
+  border-radius: 50%;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.alert-danger {
+  background-color: #FF6969;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.alert-success {
+  background-color: #6EC4FF;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+p {
+  margin: 0;
+}
+.stats a {
+  padding: 0 10px;
+}
+.stats a + a {
+  border-left: 1px solid #DBDBDB;
+}
+.pagination {
+  display: flex;
+  margin: 20px 0;
+}
+.pagination a {
+  color: #FBFBF0;
+  padding: 5px 10px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: #F8C758;
+  border: 2px solid #B7B3B2;
+}
+.micropost-one a{
+  text-decoration: none;
+  color: black;
+}

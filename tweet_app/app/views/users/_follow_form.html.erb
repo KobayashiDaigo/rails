@@ -1,0 +1,12 @@
+<!--フォローしていたらフォローを外すボタン、フォローしていなかったらフォローをするボタンを表示する-->
+<% unless current_user?(@user) %>
+  <div id="follow_form">
+  <% if current_user.following?(@user) %>
+  <!--フォローしてたらフォローを外すボタンを表示-->
+    <%= render 'unfollow' %>
+  <% else %>
+  <!--フォローしていなかったらフォローをするボタンを表示-->
+    <%= render 'follow' %>
+  <% end %>
+  </div>
+<% end %>

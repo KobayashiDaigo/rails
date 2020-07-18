@@ -1,0 +1,22 @@
+<% provide(:title, "つぶやき") %>
+<h1>つぶやき</h1>
+<%= render @micropost %>
+<div class="col-md-8">
+  <% if @micropost.coments.any? %>
+    <h3>coments (<%= @micropost.coments.count %>)</h3>
+    <ol class="microposts">
+      <%= render @coments %>
+    </ol>
+    <%= will_paginate @coments %>
+  <% end %>
+</div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="coment_form">
+        <%= render 'shared/coment_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+<% end %>

@@ -1,0 +1,18 @@
+ja:
+  will_paginate:
+    previous_label: 前
+    next_label: 次
+    page_gap: …
+  activerecord:
+    models:
+      user: ユーザー
+      micropost: つぶやき
+    attributes:
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: 確認用パスワード
+      micropost:
+        content: つぶやき
+        picture: 画像

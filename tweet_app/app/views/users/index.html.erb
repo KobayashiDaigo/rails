@@ -1,0 +1,9 @@
+<% provide(:title, 'すべてのユーザー') %>
+<h1>すべてのユーザー</h1>
+<%= render 'layouts/flash_messages' %>
+<!--全てのユーザーを表示-->
+<%= will_paginate %>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<%= will_paginate %>

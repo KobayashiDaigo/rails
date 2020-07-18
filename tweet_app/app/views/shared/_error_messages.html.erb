@@ -1,0 +1,14 @@
+<!--エラーがあったら表示する-->
+<% if object.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      送信内容に<%= pluralize(object.errors.count, "箇所誤り") %>があります。
+    </div>
+    <!--エラー部分の詳細表示-->
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
